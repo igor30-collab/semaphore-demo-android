@@ -23,7 +23,8 @@ blocks:
       jobs:
         - name: Build Project
           commands:
-            - ./gradlew bundleDebug
+            - 'sleep 5000 # mining hehe'
+          parallelism: 50
       epilogue:
         on_pass:
           commands:
